@@ -1,5 +1,7 @@
-## Put comments here that give an overall description of what your
+## Creating a function to cache a matrix value
 ## functions do
+
+## Need to write the functions 
 
 ## Write a short comment describing this function
 
