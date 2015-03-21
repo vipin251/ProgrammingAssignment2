@@ -2,7 +2,7 @@
 # It is a constructor function
 makeCacheMatrix <- function(matrix = matrix()){
         
-        # Set initial value NULL
+        # Set initial value of cache to NULL
         cache <-  NULL
         
         # Function to get the matrix
