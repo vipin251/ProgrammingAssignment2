@@ -23,7 +23,7 @@ makeCacheMatrix <- function(matrix = matrix()){
         # Function to retrieve inverse of the given matrix
         getinverse <- function() cache
         
-     
+        
         
         # Returns all the functions as a list with specific names
         list (get = getmatrix, 
@@ -31,7 +31,7 @@ makeCacheMatrix <- function(matrix = matrix()){
               getinverse = getinverse)
 }
 
-# Funtion to compute the inverse of matrix or to retrieve already calculated 
+# Funtion to compute the inverse of matrix or to retrieve already calculated inverse
 # Args:
 #       Name of the created list
 #Retruns: 
