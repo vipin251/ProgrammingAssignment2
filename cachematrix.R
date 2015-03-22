@@ -1,19 +1,24 @@
 # Creates a list of functions to retrieve cache value of inverse of a matrix
-# It is a constructor function
 # Args : 
 #       The matrix whose inverse is to be calculated and stored in a cache
 #Returns: #  3 functions as a named list 
+#               "set" the new value to variable
 #               "getmatrix" gets the argument matirx
 #               "setcachce" sets the inverse value to cache
 #               "getinverse" gets in inverse value if its already computed
 makeCacheMatrix <- function(matrix = matrix()){
         cache <-  NULL
+        set <- function(new_matrix) {
+                matrix <<- new_matrix
+                cache <<- NULL
+        }
         getmatrix <- function() matrix
         setcache <- function(inv)  cache <<- inv
         getinverse <- function() cache
         
         # Returns all the functions as a list with specific names
-        list (get = getmatrix, 
+        list (set = set,
+              get = getmatrix, 
               setcache = setcache, 
               getinverse = getinverse)
 }
